@@ -8,6 +8,6 @@ public class Coockie extends Actor
         if(Greenfoot.mouseClicked(this)){
             cash++;
         }
-        //gay
+        //gay UZdena 
     }
 }
