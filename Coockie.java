@@ -8,6 +8,6 @@ public class Coockie extends Actor
         if(Greenfoot.mouseClicked(this)){
             cash++;
         }
-        //gay
+        getWorld().showText("Coockies "+cash, 50, 15);
     }
 }
