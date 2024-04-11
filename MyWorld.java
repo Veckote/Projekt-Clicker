@@ -4,7 +4,7 @@ public class MyWorld extends World
 {
     public MyWorld()
     {    
-        super(600, 400, 1); 
+        super(1000, 600, 1); 
         prepare();
     }
 
@@ -18,6 +18,7 @@ public class MyWorld extends World
      */
     private void prepare()
     {
-        addObject(new Coockie(), 300, 200);
+        addObject(new Coockie(), 100, 300);
+        addObject(new CursorBuy(), 850, 50);
     }
 }
