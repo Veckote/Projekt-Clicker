@@ -8,6 +8,7 @@ public class CursorBuy extends Actor
         if(Greenfoot.mouseClicked(this)){
             if(Coockie.cash >= 10){
                 cursorincome = cursorincome + 0.1;
+                
             }
         }
     }
