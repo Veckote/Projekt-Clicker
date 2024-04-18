@@ -9,6 +9,8 @@ public class Coockie extends Actor
             cash++;
         }
         getWorld().showText("Coockies "+cash, 50, 15);
-        //gex
+    }
+    public void coockie(int how){
+        cash = cash+how;
     }
 }

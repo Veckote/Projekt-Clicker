@@ -7,10 +7,12 @@ public class MyWorld extends World
         super(1000, 600, 1); 
         prepare();
     }
-    public int cps;
+    public int cps = 0;
     public void act()
     {
-    
+        Coockie c = new Coockie();
+        c.coockie(cps);
+        
     }
     /**
      * Prepare the world for the start of the program.
@@ -21,7 +23,5 @@ public class MyWorld extends World
         addObject(new Coockie(), 100, 300);
         addObject(new CursorBuy(), 850, 50);
     }
-    public void cpsChange(int plsWork){
-        cps = cps+plsWork;
-    }
 }
+
