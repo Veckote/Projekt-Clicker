@@ -3,5 +3,5 @@ comment0.target=Coockie
 comment1.params=
 comment1.target=void\ act()
 comment2.params=how
-comment2.target=void\ coockie(int)
+comment2.target=void\ coockie(double)
 numComments=3
