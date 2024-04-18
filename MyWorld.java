@@ -10,7 +10,7 @@ public class MyWorld extends World
     public int cps;
     public void act()
     {
-
+    
     }
     /**
      * Prepare the world for the start of the program.
@@ -21,8 +21,7 @@ public class MyWorld extends World
         addObject(new Coockie(), 100, 300);
         addObject(new CursorBuy(), 850, 50);
     }
-    public void cpsChange(int how){
-        cps = cps+how;
+    public void cpsChange(int plsWork){
+        cps = cps+plsWork;
     }
-
 }
