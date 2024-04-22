@@ -7,8 +7,8 @@ public class CursorBuy extends Actor
         MyWorld w = new MyWorld();
         if(Greenfoot.mouseClicked(this)){
             if(Coockie.cash >= w.cp){
-                w.cps = w.cps + 1;
-                Coockie.cash = Coockie.cash - 10;
+                w.cps = w.cps + w.cursor;
+                Coockie.cash = Coockie.cash - w.cp;
                 w.cp = w.cp * 1.2;
             }
         }

@@ -2,7 +2,7 @@ import greenfoot.*;
 
 public class Coockie extends Actor
 {
-    public static double cash = 01;
+    public static double cash = 0;
     public void act()
     {
         if(Greenfoot.mouseClicked(this)){
