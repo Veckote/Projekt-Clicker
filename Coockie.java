@@ -10,7 +10,7 @@ public class Coockie extends Actor
             cash++;
         }
         DecimalFormat df = new DecimalFormat("#.#");
-        getWorld().showText("Coockies "+ df.format(cash), 50, 15);
+        getWorld().showText("Coockies "+ df.format(cash), 100, 15);
     }
     public void coockie(double how){
 
