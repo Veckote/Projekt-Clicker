@@ -1,4 +1,5 @@
 import greenfoot.*; 
+import java.text.DecimalFormat;
 
 public class Coockie extends Actor
 {
@@ -8,9 +9,13 @@ public class Coockie extends Actor
         if(Greenfoot.mouseClicked(this)){
             cash++;
         }
-        getWorld().showText("Coockies "+ cash, 50, 15);
+        DecimalFormat df = new DecimalFormat("#.#");
+        getWorld().showText("Coockies "+ df.format(cash), 100, 15);
     }
     public void coockie(double how){
+
         cash = cash+how;
+        
+        
     }
 }
