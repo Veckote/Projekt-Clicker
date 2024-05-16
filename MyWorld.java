@@ -11,7 +11,7 @@ public class MyWorld extends World
     public static double grandma = 10; //cps babki
     public static double gp = 100; //cena za babku
     public int timer = 60;
-    DecimalFormat df = new DecimalFormat("#.#");
+    DecimalFormat df = new DecimalFormat("#.#");//zaokruhleni
     public MyWorld()
     {    
         super(1000, 600, 1); 
