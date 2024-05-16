@@ -1,7 +1,8 @@
 import greenfoot.*;
-
+import java.text.DecimalFormat;
 public class CursorBuy extends Actor
 {
+    DecimalFormat df = new DecimalFormat("#.#");
     public void act()
     {
         MyWorld w = new MyWorld();
@@ -12,6 +13,6 @@ public class CursorBuy extends Actor
                 w.cp = w.cp * 1.2;
             }
         }
-        
+        getWorld().showText("Price "+ df.format(w.cp), 500, 67);
     }
 }
