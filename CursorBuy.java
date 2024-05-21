@@ -1,5 +1,6 @@
 import greenfoot.*;
 import java.text.DecimalFormat;
+
 public class CursorBuy extends Actor
 {
     DecimalFormat df = new DecimalFormat("#.#");
@@ -7,9 +8,9 @@ public class CursorBuy extends Actor
     {
         MyWorld w = new MyWorld();
         if(Greenfoot.mouseClicked(this)){
-            if(Coockie.cash >= w.cp){
+            if(w.cash >= w.cp){
                 w.cps = w.cps + w.cursor;
-                Coockie.cash = Coockie.cash - w.cp;
+                w.cash = w.cash - w.cp;
                 w.cp = w.cp * 1.1;
             }
         }

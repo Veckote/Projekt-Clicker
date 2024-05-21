@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 
 public class MyWorld extends World
 {
-    
+    public static double cash = 0; //penonzy
     public static double cps = 0; //susenka za secundu
     public static double cursor = 0.1; //cps cursoru
     public static double cp = 15; //cena za cursor
@@ -25,9 +25,10 @@ public class MyWorld extends World
         timer--;
         if (timer <= 0){
             timer = 60;
-            c.cash = c.cash + cps;
+            cash = cash + cps;
         }
         showText("Cps "+ df.format(cps), 100, 50);
+        showText("Coockies "+ df.format(cash), 100, 15);
     }
     private void prepare()
     {
@@ -39,7 +40,7 @@ public class MyWorld extends World
         showText("Price "+ df.format(cp), 500, 67);
         showText("Price "+ df.format(gp), 500, 134);
         showText("Price "+ df.format(fp), 500, 201);
-        showText("Coockies "+ 0, 100, 15);
+        showText("Coockies "+ df.format(cash), 100, 15);
     }
 }
 
