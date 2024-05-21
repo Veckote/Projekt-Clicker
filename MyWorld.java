@@ -36,6 +36,7 @@ public class MyWorld extends World
         addObject(new GrandmaBuy(), 850, 134);
         addObject(new FarmBuy(), 850, 201);
         addObject(new GambleBtn(), 950, 550);
+        addObject(new AimBtn(), 900, 550);
         showText("Cps "+ df.format(cps), 100, 50);
         showText("Price "+ df.format(cp), 670, 67);
         showText("Price "+ df.format(gp), 670, 134);
