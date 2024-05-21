@@ -20,7 +20,7 @@ public class GrandmaBuy extends Actor
             if(Coockie.cash >= w.gp){
                 w.cps = w.cps + w.grandma;
                 Coockie.cash = Coockie.cash - w.gp;
-                w.gp = w.gp * 1.2;
+                w.gp = w.gp * 1.1;
             }
         }
         getWorld().showText("Price "+ df.format(w.gp), 500, 134);
