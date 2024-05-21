@@ -7,9 +7,11 @@ public class MyWorld extends World
     
     public static double cps = 0; //susenka za secundu
     public static double cursor = 0.1; //cps cursoru
-    public static double cp = 10; //cena za cursor
-    public static double grandma = 10; //cps babki
+    public static double cp = 15; //cena za cursor
+    public static double grandma = 1; //cps babki
     public static double gp = 100; //cena za babku
+    public static double farm = 8; //cena za farmu
+    public static double fp = 1100; //cps farmy
     public int timer = 60;
     DecimalFormat df = new DecimalFormat("#.#");//zaokruhleni
     public MyWorld()
@@ -32,9 +34,11 @@ public class MyWorld extends World
         addObject(new Coockie(), 100, 300);
         addObject(new CursorBuy(), 850, 67);
         addObject(new GrandmaBuy(), 850, 134);
+        addObject(new FarmBuy(), 850, 201);
         showText("Cps "+ df.format(cps), 100, 50);
         showText("Price "+ df.format(cp), 500, 67);
         showText("Price "+ df.format(gp), 500, 134);
+        showText("Price "+ df.format(fp), 500, 201);
         showText("Coockies "+ 0, 100, 15);
     }
 }

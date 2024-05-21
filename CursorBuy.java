@@ -10,7 +10,7 @@ public class CursorBuy extends Actor
             if(Coockie.cash >= w.cp){
                 w.cps = w.cps + w.cursor;
                 Coockie.cash = Coockie.cash - w.cp;
-                w.cp = w.cp * 1.2;
+                w.cp = w.cp * 1.1;
             }
         }
         getWorld().showText("Price "+ df.format(w.cp), 500, 67);
