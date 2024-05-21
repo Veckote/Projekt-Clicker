@@ -13,6 +13,6 @@ public class FarmBuy extends Actor
                 MyWorld.fp = MyWorld.fp * 1.1;
             }
         }
-        getWorld().showText("Price "+ df.format(MyWorld.fp), 500, 201);
+        getWorld().showText("Price "+ df.format(MyWorld.fp), 670, 201);
     }
 }

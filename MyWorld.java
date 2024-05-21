@@ -36,9 +36,9 @@ public class MyWorld extends World
         addObject(new GrandmaBuy(), 850, 134);
         addObject(new FarmBuy(), 850, 201);
         showText("Cps "+ df.format(cps), 100, 50);
-        showText("Price "+ df.format(cp), 500, 67);
-        showText("Price "+ df.format(gp), 500, 134);
-        showText("Price "+ df.format(fp), 500, 201);
+        showText("Price "+ df.format(cp), 670, 67);
+        showText("Price "+ df.format(gp), 670, 134);
+        showText("Price "+ df.format(fp), 670, 201);
         showText("Coockies "+ df.format(cash), 100, 15);
     }
 }

@@ -13,6 +13,6 @@ public class CursorBuy extends Actor
                 MyWorld.cp = MyWorld.cp * 1.1;
             }
         }
-        getWorld().showText("Price "+ df.format(MyWorld.cp), 500, 67);
+        getWorld().showText("Price "+ df.format(MyWorld.cp), 670, 67);
     }
 }

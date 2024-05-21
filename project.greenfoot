@@ -4,6 +4,7 @@ class.Cursor.image=Cursor.png
 class.CursorBuy.image=CursorBuy.png
 class.FarmBuy.image=farmbuy.png
 class.GrandmaBuy.image=babkakupit.png
+class.MyWorld.image=bg.png
 dependency1.from=MyWorld
 dependency1.to=Coockie
 dependency1.type=UsesDependency
