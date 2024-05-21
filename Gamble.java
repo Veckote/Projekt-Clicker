@@ -79,5 +79,8 @@ public class Gamble extends World
                 showText("You Lost "+df.format(bet)+" coockies", 500, 100);
             }
         }
+        else{
+            showText("You dont have enought coockies", 500, 100);
+        }
     }
 }
