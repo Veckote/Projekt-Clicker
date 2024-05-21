@@ -12,7 +12,7 @@ public class MyWorld extends World
     public static double gp = 100; //cena za babku
     public static double farm = 8; //cena za farmu
     public static double fp = 1100; //cps farmy
-    public int timer = 60;
+    public static int timer = 60;
     DecimalFormat df = new DecimalFormat("#.#");//zaokruhleni
     public MyWorld()
     {    
@@ -35,6 +35,7 @@ public class MyWorld extends World
         addObject(new CursorBuy(), 850, 67);
         addObject(new GrandmaBuy(), 850, 134);
         addObject(new FarmBuy(), 850, 201);
+        addObject(new GambleBtn(), 950, 550);
         showText("Cps "+ df.format(cps), 100, 50);
         showText("Price "+ df.format(cp), 670, 67);
         showText("Price "+ df.format(gp), 670, 134);
