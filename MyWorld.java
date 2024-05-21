@@ -21,7 +21,6 @@ public class MyWorld extends World
     }
     public void act()
     {
-        Coockie c = new Coockie();
         timer--;
         if (timer <= 0){
             timer = 60;

@@ -6,14 +6,13 @@ public class GrandmaBuy extends Actor
     DecimalFormat df = new DecimalFormat("#.#");
     public void act()
     {
-        MyWorld w = new MyWorld();
         if(Greenfoot.mouseClicked(this)){
-            if(w.cash >= w.gp){
-                w.cps = w.cps + w.grandma;
-                w.cash = w.cash - w.gp;
-                w.gp = w.gp * 1.1;
+            if(MyWorld.cash >= MyWorld.gp){
+                MyWorld.cps = MyWorld.cps + MyWorld.grandma;
+                MyWorld.cash = MyWorld.cash - MyWorld.gp;
+                MyWorld.gp = MyWorld.gp * 1.1;
             }
         }
-        getWorld().showText("Price "+ df.format(w.gp), 500, 134);
+        getWorld().showText("Price "+ df.format(MyWorld.gp), 500, 134);
     }
 }
