@@ -20,4 +20,13 @@ public class Upgrade extends World
         UpgC1 upgC1 = new UpgC1();
         addObject(upgC1,30,29);
     }
+    public void act()
+    {
+        Main.timer--;
+        Main.cps = Main.cursor*Main.cpc + Main.grandma*Main.gpc + Main.farm*Main.fpc + Main.mine*Main.mpc;
+        if (Main.timer <= 0){
+            Main.timer = 60;
+            Main.cash = Main.cash + Main.cps;
+        }
+    }
 }
