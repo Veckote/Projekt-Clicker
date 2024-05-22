@@ -8,9 +8,9 @@ public class MineBuy extends Actor
     {
         if(Greenfoot.mouseClicked(this)){
             if(Main.cash >= Main.mp){
-                Main.cps = Main.cps + Main.mine;
                 Main.cash = Main.cash - Main.mp;
                 Main.mp = Main.mp * 1.2;
+                Main.mpc++;
             }
         }
         getWorld().showText("Price "+ df.format(Main.mp), 670, 268);

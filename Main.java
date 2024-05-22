@@ -11,10 +11,13 @@ public class Main extends World
     public static double cpc = 0; //count cursorov
     public static double grandma = 1; //cps babki
     public static double gp = 100; //cena za babku
+    public static double gpc = 0; //count babok
     public static double farm = 8; //cps farmu
     public static double fp = 1100; //cena za farmu
+    public static double fpc = 0; //count farm
     public static double mp = 12000; //cena za mine
     public static double mine = 45; //cps majnu
+    public static double mpc = 0; //count majn 
     public static int timer = 60;
     DecimalFormat df = new DecimalFormat("#.#");//zaokruhleni
     public Main()
@@ -25,7 +28,7 @@ public class Main extends World
     public void act()
     {
         timer--;
-        cps = cursor*cpc;
+        cps = cursor*cpc + grandma*gpc + farm*fpc + mine*mpc;
         if (timer <= 0){
             timer = 60;
             cash = cash + cps;
