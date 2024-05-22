@@ -29,9 +29,10 @@ public class Main extends World
     public static int isu1_1 = 0;//1click upg check
     public static int isu1_2 = 0;//1click upg check
     DecimalFormat df = new DecimalFormat("#.#");//zaokruhleni
-    
+
     private int chance = 1;
-    private int timer1 = 100;
+    private int timer1 = 60; //cas zivotu gloden nigga
+    private int timerEff = 4620;
     public Main()
     {    
         super(1000, 600, 1); 
@@ -53,16 +54,9 @@ public class Main extends World
 
     public void goldenCookie()
     {
-        Greenfoot.getRandomNumber(1);
-        timer1--;
-        if(Greenfoot.getRandomNumber(1) == chance)
+        if(Greenfoot.getRandomNumber(100) == chance)
         {
             addObject(new Goldencookie(), Greenfoot.getRandomNumber(1000), Greenfoot.getRandomNumber(600));
-            if(timer1 == 0)
-            {
-                removeObject(new Goldencookie());
-                timer=100;
-            }
         }
     }
 
@@ -85,6 +79,12 @@ public class Main extends World
         showText("Coockies "+ df.format(cash), 100, 15);
         Upg upg = new Upg();
         addObject(upg,42,560);
+    }
+    public void buff(){
+        cps = cps * 7;
+    }
+    public void debuff(){
+        cps = cps / 7;
     }
 }
 

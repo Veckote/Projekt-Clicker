@@ -17,16 +17,12 @@ public class Goldencookie extends Actor
     
     public void act()
     {
-        Greenfoot.getRandomNumber(1);
         timer--;
-        if(Greenfoot.getRandomNumber(1) == chance)
-        {
-            getWorld().addObject(this, Greenfoot.getRandomNumber(1000), Greenfoot.getRandomNumber(600));
-            if(timer == 0)
-            {
-                getWorld().removeObject(this);
-                timer=100;
-            }
+        if(timer == 0){
+            getWorld().removeObject(this);
+        }
+        if(Greenfoot.mouseClicked(this)){
+            Main.cash = Main.cash + Main.cps*77;
         }
     }
 }
