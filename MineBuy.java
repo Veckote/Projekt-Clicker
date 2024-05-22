@@ -13,6 +13,6 @@ public class MineBuy extends Actor
                 MyWorld.mp = MyWorld.mp * 1.2;
             }
         }
-        getWorld().showText("Price "+ df.format(MyWorld.mp), 670, 67);
+        getWorld().showText("Price "+ df.format(MyWorld.mp), 670, 268);
     }
 }
