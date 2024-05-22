@@ -13,7 +13,7 @@ public class Goldencookie extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public int chance = 1;
-    public int timer = 100;
+    public int timer = 300;
     
     public void act()
     {
