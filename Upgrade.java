@@ -23,6 +23,12 @@ public class Upgrade extends World
         UpgC2 upgC2 = new UpgC2();
         addObject(upgC2,210,30);
         showText("500, Cursor x2 ", 210, 55);
+        UpgCl1 upgCl1 = new UpgCl1();
+        addObject(upgCl1,70,120);
+        showText("200, Click x2 ", 70, 150);
+        UpgCl2 upgCl2 = new UpgCl2();
+        addObject(upgCl2,210,120);
+        showText("750, Click x2 ", 210, 150);
     }
 
     public void act()
@@ -42,6 +48,22 @@ public class Upgrade extends World
         else
         {
             showText("Bought:"+ "No", 210, 80);    
+        }
+        if (Main.isu1_1 == 1)
+        {
+            showText("Bought:"+ "Yes", 70, 175);
+        }
+        else
+        {
+            showText("Bought:"+ "No", 70, 175);    
+        }
+        if (Main.isu1_2 == 1)
+        {
+            showText("Bought:"+ "Yes", 210, 175);
+        }
+        else
+        {
+            showText("Bought:"+ "No", 210, 175);    
         }
         
         Main.timer--;

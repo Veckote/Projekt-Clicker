@@ -22,9 +22,12 @@ public class Main extends World
     public static double factory = 260; //cps fabryky
     public static double factc = 0;
     public static int timer = 60;
+    public static double click = 1; //click money
     //upgs
     public static int isu1 = 0;//1cursor upg check
     public static int isu2 = 0;//1cursor upg check
+    public static int isu1_1 = 0;//1click upg check
+    public static int isu1_2 = 0;//1click upg check
     DecimalFormat df = new DecimalFormat("#.#");//zaokruhleni
     public Main()
     {    
