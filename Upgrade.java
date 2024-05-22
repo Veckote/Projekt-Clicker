@@ -18,10 +18,32 @@ public class Upgrade extends World
         BackBtn backBtn = new BackBtn();
         addObject(backBtn,950,550);
         UpgC1 upgC1 = new UpgC1();
-        addObject(upgC1,30,29);
+        addObject(upgC1,70,30);
+        showText("100, Cursor x2 ", 70, 55);
+        UpgC2 upgC2 = new UpgC2();
+        addObject(upgC2,210,30);
+        showText("500, Cursor x2 ", 210, 55);
     }
+
     public void act()
     {
+        if (Main.isu1 == 1)
+        {
+            showText("Bought:"+ "Yes", 70, 80);
+        }
+        else
+        {
+            showText("Bought:"+ "No", 70, 80);    
+        }
+        if (Main.isu2 == 1)
+        {
+            showText("Bought:"+ "Yes", 210, 80);
+        }
+        else
+        {
+            showText("Bought:"+ "No", 210, 80);    
+        }
+        
         Main.timer--;
         Main.cps = Main.cursor*Main.cpc + Main.grandma*Main.gpc + Main.farm*Main.fpc + Main.mine*Main.mpc;
         if (Main.timer <= 0){

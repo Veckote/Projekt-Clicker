@@ -19,6 +19,9 @@ public class Main extends World
     public static double mine = 45; //cps majnu
     public static double mpc = 0; //count majn 
     public static int timer = 60;
+    //upgs
+    public static int isu1 = 0;//1cursor upg check
+    public static int isu2 = 0;//1cursor upg check
     DecimalFormat df = new DecimalFormat("#.#");//zaokruhleni
     public Main()
     {    
