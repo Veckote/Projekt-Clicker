@@ -18,6 +18,9 @@ public class Main extends World
     public static double mp = 12000; //cena za mine
     public static double mine = 45; //cps majnu
     public static double mpc = 0; //count majn 
+    public static double factp = 130000; //cena fabryky
+    public static double factory = 260; //cps fabryky
+    public static double factc = 0;
     public static int timer = 60;
     //upgs
     public static int isu1 = 0;//1cursor upg check
@@ -31,7 +34,7 @@ public class Main extends World
     public void act()
     {
         timer--;
-        cps = cursor*cpc + grandma*gpc + farm*fpc + mine*mpc;
+        cps = cursor*cpc + grandma*gpc + farm*fpc + mine*mpc + factory*factc;
         if (timer <= 0){
             timer = 60;
             cash = cash + cps;
@@ -47,6 +50,7 @@ public class Main extends World
         addObject(new GrandmaBuy(), 850, 134);
         addObject(new FarmBuy(), 850, 201);
         addObject(new MineBuy(), 850, 268);
+        addObject(new FactoryBuy(), 850, 335);
         addObject(new GambleBtn(), 950, 550);
         addObject(new AimBtn(), 900, 550);
         showText("Cps "+ df.format(cps), 100, 50);
@@ -54,6 +58,7 @@ public class Main extends World
         showText("Price "+ df.format(gp), 670, 134);
         showText("Price "+ df.format(fp), 670, 201);
         showText("Price "+ df.format(mp), 670, 268);
+        showText("Price "+ df.format(factp), 670, 335);
         showText("Coockies "+ df.format(cash), 100, 15);
         Upg upg = new Upg();
         addObject(upg,42,560);
