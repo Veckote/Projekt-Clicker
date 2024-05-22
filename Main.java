@@ -8,6 +8,7 @@ public class Main extends World
     public static double cps = 0; //susenka za secundu
     public static double cursor = 0.1; //cps cursoru
     public static double cp = 15; //cena za cursor
+    public static double cpc = 0; //count cursorov
     public static double grandma = 1; //cps babki
     public static double gp = 100; //cena za babku
     public static double farm = 8; //cps farmu
@@ -24,6 +25,7 @@ public class Main extends World
     public void act()
     {
         timer--;
+        cps = cursor*cpc;
         if (timer <= 0){
             timer = 60;
             cash = cash + cps;

@@ -8,9 +8,9 @@ public class CursorBuy extends Actor
     {
         if(Greenfoot.mouseClicked(this)){
             if(Main.cash >= Main.cp){
-                Main.cps = Main.cps + Main.cursor;
                 Main.cash = Main.cash - Main.cp;
                 Main.cp = Main.cp * 1.2;
+                Main.cpc++;
             }
         }
         getWorld().showText("Price "+ df.format(Main.cp), 670, 67);
