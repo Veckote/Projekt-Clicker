@@ -31,6 +31,7 @@ public class MyWorld extends World
         showText("Cps "+ df.format(cps), 100, 50);
         showText("Coockies "+ df.format(cash), 100, 15);
     }
+    
     private void prepare()
     {
         addObject(new Coockie(), 100, 300);
@@ -46,6 +47,8 @@ public class MyWorld extends World
         showText("Price "+ df.format(fp), 670, 201);
         showText("Price "+ df.format(mp), 670, 268);
         showText("Coockies "+ df.format(cash), 100, 15);
+        Upg upg = new Upg();
+        addObject(upg,42,560);
     }
 }
 
