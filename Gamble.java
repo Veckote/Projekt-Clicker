@@ -27,7 +27,7 @@ public class Gamble extends World
         addObject(new BackBtn(), 950, 550);
         addObject(new LetsGamble(), 500, 300);
         showText("To play you chouse a bet by clicking up and down buttnos, and a nuber whith w and s buttons, ", 500, 500);
-        showText("than you press yellow buttnon. To go back press blue button", 500, 550);
+        showText("than you press yellow buttnon. To go back press back button", 500, 550);
     }
     public void act(){
         showText("Cps "+ df.format(MyWorld.cps), 100, 50);

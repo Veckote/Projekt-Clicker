@@ -28,7 +28,7 @@ public class Aim extends World
     private void prepare(){
         addObject(start, 500, 300);
         addObject(new AimC(), 500, 100);
-        showText("To earn coockies you have to click all sircles(as one above) as fast as posible", 500, 150);
+        showText("To earn coockies you have to click all circles(as one above) as fast as posible", 500, 150);
         showText("To start press green button", 500, 350);
     }
     public void act(){
@@ -46,7 +46,7 @@ public class Aim extends World
             }
             else{
                     prize();
-                    Greenfoot.delay(300);
+                    Greenfoot.delay(120);
                     Greenfoot.setWorld(new MyWorld());
             }
         }
