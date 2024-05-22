@@ -24,5 +24,6 @@ public class FactoryBuy extends Actor
             }
         }
     getWorld().showText("Price "+ df.format(Main.factp), 670, 335);
+    getWorld().showText(df.format(Main.factc), 950, 335);
     }
 }
