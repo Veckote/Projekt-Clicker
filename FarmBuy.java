@@ -7,12 +7,12 @@ public class FarmBuy extends Actor
     public void act()
     {
         if(Greenfoot.mouseClicked(this)){
-            if(MyWorld.cash >= MyWorld.fp){
-                MyWorld.cps = MyWorld.cps + MyWorld.farm;
-                MyWorld.cash = MyWorld.cash - MyWorld.fp;
-                MyWorld.fp = MyWorld.fp * 1.2;
+            if(Main.cash >= Main.fp){
+                Main.cps = Main.cps + Main.farm;
+                Main.cash = Main.cash - Main.fp;
+                Main.fp = Main.fp * 1.2;
             }
         }
-        getWorld().showText("Price "+ df.format(MyWorld.fp), 670, 201);
+        getWorld().showText("Price "+ df.format(Main.fp), 670, 201);
     }
 }

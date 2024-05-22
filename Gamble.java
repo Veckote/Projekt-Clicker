@@ -30,20 +30,20 @@ public class Gamble extends World
         showText("than you press yellow buttnon. To go back press back button", 500, 550);
     }
     public void act(){
-        showText("Cps "+ df.format(MyWorld.cps), 100, 50);
-        showText("Coockies "+ df.format(MyWorld.cash), 100, 15);
+        showText("Cps "+ df.format(Main.cps), 100, 50);
+        showText("Coockies "+ df.format(Main.cash), 100, 15);
         showText("Bet cash "+ df.format(bet), 500, 250);
         showText("Prediction "+ betNum, 300, 300);
         showText("Number "+ num, 700, 300);
-        MyWorld.timer--;
-        if (MyWorld.timer <= 0){
-            MyWorld.timer = 60;
-            MyWorld.cash = MyWorld.cash + MyWorld.cps;
+        Main.timer--;
+        if (Main.timer <= 0){
+            Main.timer = 60;
+            Main.cash = Main.cash + Main.cps;
         }
         if(Greenfoot.isKeyDown("up")){
             bet++;
-            if(bet > MyWorld.cash){
-                bet = MyWorld.cash;
+            if(bet > Main.cash){
+                bet = Main.cash;
             }
         }
         if(Greenfoot.isKeyDown("down")){
@@ -68,14 +68,14 @@ public class Gamble extends World
         }
     }
     public void gamble(){
-        if(MyWorld.cash > bet){
+        if(Main.cash > bet){
             num = Greenfoot.getRandomNumber(5);
             if(num == betNum){
-                MyWorld.cash = MyWorld.cash + bet;
+                Main.cash = Main.cash + bet;
                 showText("You Won "+df.format(bet)+" coockies", 500, 100);
             }
             else{
-                MyWorld.cash = MyWorld.cash - bet;
+                Main.cash = Main.cash - bet;
                 showText("You Lost "+df.format(bet)+" coockies", 500, 100);
             }
         }

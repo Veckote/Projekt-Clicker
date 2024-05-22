@@ -47,14 +47,14 @@ public class Aim extends World
             else{
                     prize();
                     Greenfoot.delay(120);
-                    Greenfoot.setWorld(new MyWorld());
+                    Greenfoot.setWorld(new Main());
             }
         }
         showText("Time "+df.format(time/60), 50, 50);
         }
     private void prize(){
-        double prize = MyWorld.cash/time*100;
+        double prize = Main.cash/time*100;
         showText("You won "+df.format(prize), 500, 300);
-        MyWorld.cash = MyWorld.cash + prize;
+        Main.cash = Main.cash + prize;
     }
 }

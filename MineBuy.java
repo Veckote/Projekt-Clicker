@@ -7,12 +7,12 @@ public class MineBuy extends Actor
     public void act()
     {
         if(Greenfoot.mouseClicked(this)){
-            if(MyWorld.cash >= MyWorld.mp){
-                MyWorld.cps = MyWorld.cps + MyWorld.mine;
-                MyWorld.cash = MyWorld.cash - MyWorld.mp;
-                MyWorld.mp = MyWorld.mp * 1.2;
+            if(Main.cash >= Main.mp){
+                Main.cps = Main.cps + Main.mine;
+                Main.cash = Main.cash - Main.mp;
+                Main.mp = Main.mp * 1.2;
             }
         }
-        getWorld().showText("Price "+ df.format(MyWorld.mp), 670, 268);
+        getWorld().showText("Price "+ df.format(Main.mp), 670, 268);
     }
 }

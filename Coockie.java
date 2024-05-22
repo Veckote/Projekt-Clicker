@@ -6,7 +6,7 @@ public class Coockie extends Actor
     {
         if(Greenfoot.mouseClicked(this))
         {
-            MyWorld.cash++;
+            Main.cash++;
         }
     }
 }
