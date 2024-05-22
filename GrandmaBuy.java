@@ -10,7 +10,7 @@ public class GrandmaBuy extends Actor
             if(MyWorld.cash >= MyWorld.gp){
                 MyWorld.cps = MyWorld.cps + MyWorld.grandma;
                 MyWorld.cash = MyWorld.cash - MyWorld.gp;
-                MyWorld.gp = MyWorld.gp * 1.1;
+                MyWorld.gp = MyWorld.gp * 1.2;
             }
         }
         getWorld().showText("Price "+ df.format(MyWorld.gp), 670, 134);

@@ -10,7 +10,7 @@ public class FarmBuy extends Actor
             if(MyWorld.cash >= MyWorld.fp){
                 MyWorld.cps = MyWorld.cps + MyWorld.farm;
                 MyWorld.cash = MyWorld.cash - MyWorld.fp;
-                MyWorld.fp = MyWorld.fp * 1.1;
+                MyWorld.fp = MyWorld.fp * 1.2;
             }
         }
         getWorld().showText("Price "+ df.format(MyWorld.fp), 670, 201);
