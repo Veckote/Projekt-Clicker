@@ -54,7 +54,7 @@ public class Main extends World
 
     public void goldenCookie()
     {
-        if(Greenfoot.getRandomNumber(100) == chance)
+        if(Greenfoot.getRandomNumber(1000) == chance)
         {
             addObject(new Goldencookie(), Greenfoot.getRandomNumber(1000), Greenfoot.getRandomNumber(600));
         }

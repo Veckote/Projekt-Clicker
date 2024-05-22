@@ -23,6 +23,7 @@ public class Goldencookie extends Actor
         }
         if(Greenfoot.mouseClicked(this)){
             Main.cash = Main.cash + Main.cps*77;
+            getWorld().removeObject(this);
         }
     }
 }
