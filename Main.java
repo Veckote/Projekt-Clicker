@@ -29,11 +29,15 @@ public class Main extends World
     public static int isu1_1 = 0;//1click upg check
     public static int isu1_2 = 0;//1click upg check
     DecimalFormat df = new DecimalFormat("#.#");//zaokruhleni
+    
+    private int chance = 1;
+    private int timer1 = 100;
     public Main()
     {    
         super(1000, 600, 1); 
         prepare();
     }
+
     public void act()
     {
         timer--;
@@ -44,8 +48,24 @@ public class Main extends World
         }
         showText("Cps "+ df.format(cps), 100, 50);
         showText("Coockies "+ df.format(cash), 100, 15);
+        goldenCookie();
     }
-    
+
+    public void goldenCookie()
+    {
+        Greenfoot.getRandomNumber(1);
+        timer1--;
+        if(Greenfoot.getRandomNumber(1) == chance)
+        {
+            addObject(new Goldencookie(), Greenfoot.getRandomNumber(1000), Greenfoot.getRandomNumber(600));
+            if(timer1 == 0)
+            {
+                removeObject(new Goldencookie());
+                timer=100;
+            }
+        }
+    }
+
     private void prepare()
     {
         addObject(new Coockie(), 100, 300);
