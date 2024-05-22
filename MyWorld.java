@@ -7,6 +7,7 @@ public class MyWorld extends World
     public static double cash = 0; //penonzy
     public static double cps = 0; //susenka za secundu
     public static double cursor = 0.1; //cps cursoru
+    public static double cursor_c = 0; //count cursor
     public static double cp = 15; //cena za cursor
     public static double grandma = 1; //cps babki
     public static double gp = 100; //cena za babku
@@ -15,7 +16,7 @@ public class MyWorld extends World
     public static double mp = 12000; //cena za mine
     public static double mine = 45; //cps majnu
     public static int timer = 60;
-    DecimalFormat df = new DecimalFormat("#.#");//zaokruhleni
+    DecimalFormat df = new DecimalFormat("#.#");//zaokruhleni 
     public MyWorld()
     {    
         super(1000, 600, 1); 
@@ -24,6 +25,7 @@ public class MyWorld extends World
     public void act()
     {
         timer--;
+        cps = cursor*cursor_c;
         if (timer <= 0){
             timer = 60;
             cash = cash + cps;
