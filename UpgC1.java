@@ -6,9 +6,9 @@ public class UpgC1 extends Actor
     {
         int price = 100;
         if(Greenfoot.mouseClicked(this)){
-            if(MyWorld.cash >= MyWorld.cp){
-                MyWorld.cash = MyWorld.cash - price;
-                MyWorld.cursor = MyWorld.cursor * 2;
+            if(Main.cash >= Main.cp){
+                Main.cash = Main.cash - price;
+                Main.cursor = Main.cursor * 2;
             }
         }
     }
