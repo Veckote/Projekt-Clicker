@@ -14,5 +14,6 @@ public class GrandmaBuy extends Actor
             }
         }
         getWorld().showText("Price "+ df.format(Main.gp), 670, 134);
+        getWorld().showText(df.format(Main.gpc), 950, 134);
     }
 }
